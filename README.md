@@ -23,13 +23,17 @@ use slab_alloc::Slab;
 
 let mut slab = Slab::new();
 
+```
 #Allocation
+```rust
 let obj = slab.allocate(42).unwrap();
 assert_eq!(*obj, 42);
-
+```
 #Libération:
+```rust
 let ptr = obj as *mut _;
 slab.deallocate(ptr);
-
-##Tests
+```
+##Tests : test avec le fichier test1
+```rust
 cargo test
