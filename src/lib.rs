@@ -10,10 +10,9 @@ pub struct Slab<T> {
 }
 
 impl<T> Slab<T> {
-    pub fn new() -> Self {
-        const UNINIT: MaybeUninit<()> = MaybeUninit::uninit();    
+    pub fn new() -> Self {  
         Self {
-            storage: unsafe { [UNINIT; SLAB_SIZE] as [MaybeUninit<T>; SLAB_SIZE] },
+            storage: unsafe { MaybeUninit::uninit().assume_init() },
             used: [false; SLAB_SIZE],
         }
     }
