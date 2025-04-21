@@ -34,7 +34,7 @@ Libération:
 let ptr = obj as *mut _;
 slab.deallocate(ptr);
 ```
-Tests : test avec le fichier test1
+Tests : test avec le fichier test1.rs
 ```rust
 cargo test
 ```
