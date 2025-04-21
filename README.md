@@ -37,3 +37,4 @@ slab.deallocate(ptr);
 Tests : test avec le fichier test1
 ```rust
 cargo test
+```
