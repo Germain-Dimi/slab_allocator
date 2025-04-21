@@ -1,7 +1,7 @@
 # 🧱 slab_alloc
 
 Un mini **slab allocator** écrit en **Rust `no_std`**, conçu pour les environnements bas-niveau ou embarqués.  
-Ce projet démontre comment allouer et libérer efficacement de la mémoire pour des objets de taille fixe **sans utiliser le heap dynamique classique** (`Box`, `Vec`, etc.).
+Ce projet démontre comment allouer et libérer efficacement de la mémoire pour des objets de taille fixe.
 
 ---
 
@@ -38,3 +38,6 @@ Tests : test avec le fichier test1
 ```rust
 cargo test
 ```
+##📎Liens
+https://github.com/tokio-rs/slab
+https://doc.rust-lang.org/alloc/
